@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/fontawesome/all.min.css">
+    <link rel="shortcut icon" href="asset/images/faicon.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <!-- cabeçalho -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="d-flex justify-content-start">
+                    <img src="asset/images/faicon.png" alt="logo" srcset="img-fluid me-3" width="40px">
+                    <h1>Lista de Tarefas</h1>
+                </div>
+            </div>
+
+            <hr class="my-3">
+        </div>
+
+        <!-- aspecto visula de uma tarefa -->
+        <div class="row">
+            <div class="col">
+                <h3>Nova Tarefa</h3>
+                <div class="mb-3">
+                    <input type="text" id="text_task_text" class="form-control" maxlength="100" placeholder="Designação da tarefa">
+                </div>
+                <div class="text-center">
+                    <a href="index.html" class="btn btn-secondary">Cancelar</a>
+                    <button class="btn btn-primary" id="btn_guardar">Guardar</button>
+                </div>
+                <div class="text-center alert-danger p-2 mt-3 d-none" id="error"></div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="row me-3">
+            <div class="col text-center">
+                <hr>
+                <p>Lista de tarefas &copy; 2023</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/new_task.js"></script>
+</body>
+
+</html>
+
+<!--
+    - ver tarefas
+        titulo
+        filtro para escolher tarefa que queremos ver (select)
+        botão para adicionar tarefas
+        (mensagem sobre o facto de não existirem tarefas)
+        caixa para tarefas
+            - possibilidade de alterar o status, editar tarefa e eliminar tarefa
+            paragrafo com o total de tarefas disponiveis (de acordo com o filtro)
+
+-->
